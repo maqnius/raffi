@@ -1,0 +1,26 @@
+---
+---
+
+body {
+    font-family: monospace;
+    max-width: 80%;
+    margin: 0 auto;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.post-image {
+    width: 100%;
+}
+
