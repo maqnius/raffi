@@ -2,33 +2,10 @@
 layout: default
 title: My Blog
 ---
+{% assign page = site.posts[0] %}
+{% assign content = page.content %}
+{% include post.html %}
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-<img class="post-image" src="{{post.image}}">
-<h2 class="post-title">{{ post.title }}</h2>
-<div class="content">
-  {{ post.content }}
-</div>
-{% endfor %}
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-  <a class="nav-back" href="{{ paginator.previous_page_path }}" class="previous">&lsaquo; Zurück</a>
-  {% else %}
-  <span class="nav-back">&lsaquo; Zurück</span>
-  {% endif %}
-  |
-  {% if paginator.next_page %}
-  <a class="nav-forward" href="{{ paginator.next_page_path }}" class="next">Vor &rsaquo;</a>
-  {% else %}
-  <span class="nav-forward">Vor &rsaquo;</span>
-  {% endif %}
-  <p class="page_number ">
-    {{ paginator.page }} von {{ paginator.total_pages }}
-  </p>
-</div>
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
