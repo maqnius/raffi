@@ -15,15 +15,15 @@ title: My Blog
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="previous">&lsaquo; Zurück</a>
+  <a class="nav-back" href="{{ paginator.previous_page_path }}" class="previous">&lsaquo; Zurück</a>
   {% else %}
-  &lsaquo; Zurück
+  <span class="nav-back">&lsaquo; Zurück</span>
   {% endif %}
   |
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="next">Vor &rsaquo;</a>
+  <a class="nav-forward" href="{{ paginator.next_page_path }}" class="next">Vor &rsaquo;</a>
   {% else %}
-  Vor &rsaquo;
+  <span class="nav-forward">Vor &rsaquo;</span>
   {% endif %}
   <p class="page_number ">
     {{ paginator.page }} von {{ paginator.total_pages }}
