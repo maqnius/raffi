@@ -4,28 +4,26 @@ title: My Blog
 ---
 
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}  
-  <img class="post-image" src="{{post.image}}">
-  <h2 class="post-title">{{ post.title }}</h2>
-  <div class="content">
-    {{ post.content }}
-  </div>
+{% for post in paginator.posts %}
+<img class="post-image" src="{{post.image}}">
+<h2 class="post-title">{{ post.title }}</h2>
+<div class="content">
+  {{ post.content }}
+</div>
 {% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
+  <a href="{{ paginator.previous_page_path }}" class="previous">&lsaquo; Zurück</a>
   {% else %}
-    Previous
+  &lsaquo; Zurück
   {% endif %}
   |
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  <a href="{{ paginator.next_page_path }}" class="next">Vor &rsaquo;</a>
   {% else %}
-    Next
+  Vor &rsaquo;
   {% endif %}
   <p class="page_number ">
     {{ paginator.page }} von {{ paginator.total_pages }}
