@@ -3,6 +3,8 @@
 
 body {
     font-family: monospace;
+    line-height: 1.5em;
+    font-size: 1.2em;
     max-width: 90%;
     margin: 0 auto;
     width: 500px;
@@ -22,5 +24,14 @@ nav {
 
 .post-image {
     width: 100%;
+}
+
+.post-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.pagination {
+    text-align: center;
 }
 
