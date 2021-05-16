@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: landing
 title: My Blog
 ---
-<a href="{% link sex.html %}">sex</a>
-<a href="{{ site.posts[0].url }}">posts</a>
+<h1>RONNIE</h1>
+<div class="wrap">
+  <a class="left" href="{% link sexwork.html %}"><span class="text-left">sex</span></a>
+  <a class="right" href="{{ site.posts[0].url }}"><span class="text-right">posts</span></a>
+</div>
 
 <script>
   if (window.netlifyIdentity) {
