@@ -1,5 +1,10 @@
 ---
 ---
+$leftBgColor: {{ site.data.theme.leftBgColor }};
+$leftFontColor: {{ site.data.theme.leftFontColor }};
+$rightBgColor: {{ site.data.theme.rightBgColor }};
+$rightFontColor: {{ site.data.theme.rightFontColor }};
+
 * {
     box-sizing: content-box;
 }
@@ -13,7 +18,7 @@ html, body, main {
 
 svg {
     fill: currentColor;
-    color: yellow;
+    color: $leftBgColor;
     height: 100%;
     width: 20%;
     position: absolute;
@@ -26,6 +31,10 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+h1 {
+    text-align: center;
 }
 
 .wrap {
@@ -44,14 +53,14 @@ main {
 .left  {
     width: 40%;
     text-align: left;
-    background-color: yellow;
+    background-color: $leftBgColor;
 
 }
 
 .right {
     width: 60%;
     text-align: right;
-    background-color: blue;
+    background-color: $rightBgColor;
 }
 
 .text-left, .text-right {
@@ -61,9 +70,11 @@ main {
 }
 
 .text-left {
+    color: $leftFontColor;
     margin-left: 10%;
 }
 
 .text-right {
+    color: $rightFontColor;
     margin-right: 10%;
 }
