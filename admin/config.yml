@@ -82,7 +82,6 @@ collections:
           - { label: "Überschrift", name: headerColor , widget: color }
           - { label: "Überschrift (Hover)", name: headerHoverColor , widget: color }
           - { label: "Hintergrund Links", name: leftBgColor, widget: color }
-          - { label: "Hintergrund Links", name: leftBgColor, widget: color }
           - { label: "Hintergrund Rechts", name: rightBgColor, widget: color }
           - { label: "Schriftfarbe Links", name: leftFontColor, widget: color }
           - {
