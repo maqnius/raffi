@@ -11,6 +11,16 @@ html, body, main {
     height: 100%;
 }
 
+svg {
+    fill: currentColor;
+    color: yellow;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top:0;
+    left: 40%;
+    z-index: 2;
+}
 
 main {
     display: flex;
@@ -19,6 +29,7 @@ main {
 }
 
 .wrap {
+    position: relative;
     display: flex;
     height: 100%;
     width: 100%;
@@ -26,46 +37,19 @@ main {
     justify-content: space-between;
 }
 .left, .right {
-    position: relative;
     display: inline-block;
-    width: 40%;
     height: 100%;
 }
 
-.left {
+.left  {
+    width: 40%;
     text-align: left;
     background-color: yellow;
 
 }
 
-.right::after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 50%;
-    top: 0;
-    left:0;
-    background-color: black;
-    z-index: -1;
-    transform: skewX(-20deg);
-    transform-origin:top left;
-}
-
-.left::after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 50%;
-    top: 0;
-    right:0;
-    background-color: black;
-    z-index: -1;
-    transform: skewX(-20deg);
-    transform-origin:bottom right;
-}
-
-
 .right {
+    width: 60%;
     text-align: right;
     background-color: blue;
 }
