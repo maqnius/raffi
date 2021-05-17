@@ -7,3 +7,24 @@ body {
     margin: 0 auto;
     width: 500px;
 }
+
+.avatar {
+    float: right;
+    width: 300px;
+}
+
+.images {
+    clear: both;
+}
+
+.post-image {
+    width: 100%;
+    margin-top: 2em;
+}
+
+@media (max-width: 400px) {
+    .avatar {
+        float: none;
+        width: 100%;
+    }
+}

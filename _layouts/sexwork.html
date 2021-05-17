@@ -3,5 +3,11 @@ layout: base
 ---
 <link rel="stylesheet" href="{{ "/assets/css/sexwork.css" | relative_url }}">
 <main>
+    <img class="avatar" src="{{ page.avatar }}">
     {{ content }}
+    <section class="images">
+        {% for image in page.marketing %}
+        <img class="post-image" src="{{image}}">
+        {% endfor %}
+    </section>
 </main>
