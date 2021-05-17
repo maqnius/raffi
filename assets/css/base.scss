@@ -1,5 +1,9 @@
 ---
 ---
+$headColor: {{ site.data.theme.headerColor }};
+$headColorHover: {{ site.data.theme.headerHoverColor }};
+
+
 * {
     box-sizing: content-box;
 }
@@ -10,7 +14,16 @@ body {
 }
 
 h1 {
+    color: $headColor;
     text-align: center;
     font-family: sans-serif;
     text-transform: uppercase;
+}
+
+h1 > a {
+    color: $headColor;
+    text-decoration: none;
+    &:hover {
+        color: $headColorHover;
+    }
 }

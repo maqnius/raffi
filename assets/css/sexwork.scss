@@ -8,10 +8,15 @@ body {
     width: 500px;
 }
 
+main {
+    margin-top: 5em;
+}
+
 .avatar {
     float: right;
     width: 200px;
     max-width: 40%;
+    margin: 0 0 1em 1em;
 }
 
 .images {
@@ -23,10 +28,16 @@ body {
     margin-top: 2em;
 }
 
+// Footer
+footer {
+    margin: 4em 0;
+}
+
 @media (max-width: 300px) {
     .avatar {
         float: none;
         max-width: 100%;
         width: 100%;
+        margin: 0;
     }
 }
