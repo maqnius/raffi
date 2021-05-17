@@ -1,4 +1,4 @@
-leftBgColor: yellow
-leftFontColor: black
-rightBgColor: black
-rightFontColor: white
+leftBgColor: "#a033b8"
+rightBgColor: "#ffe21f"
+leftFontColor: "#e1dfe5"
+rightFontColor: "#7a328f"
