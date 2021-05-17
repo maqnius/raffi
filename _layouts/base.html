@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
 
-    <title>{{ site.title }}</title>
+    <title>
+    {% if page.title %}
+        {{ site.title }} > {{ page.title }}
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+    </title>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/base.css" | relative_url }}">
 
   </head>
   <body>
     <h1>{{ site.title }}</h1>
-    {% include navigation.html %}
-    <main>
-      {{ content }}
-    </main>
-    <footer>
-      &copy; to me
-    </footer>
+    {{ content }}
   </body>
 </html>

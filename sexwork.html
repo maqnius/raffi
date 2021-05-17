@@ -1,6 +1,17 @@
 ---
-layout: sex
+layout: sexwork
 title: Sex Work
+avatar:
+    scr: ""
+myname: Ronnie
+description: "bla"
+marketing: []
 ---
 
-Yo
+<img class="avatar" src="{{ page.avatar }}">
+<h2>{{ page.myname }}</h2>
+{{ page.description }}
+
+{% for image in page.marketing %}
+    <img class="post-image" src="{{image}}">
+{% endfor %}

@@ -5,9 +5,16 @@ $leftFontColor: {{ site.data.theme.leftFontColor }};
 $rightBgColor: {{ site.data.theme.rightBgColor }};
 $rightFontColor: {{ site.data.theme.rightFontColor }};
 
-* {
-    box-sizing: content-box;
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
+html {
+    font-family: sans-serif;
+}
+
 
 html, body, main {
     margin: 0;
@@ -27,15 +34,7 @@ svg {
     z-index: 2;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
-h1 {
-    text-align: center;
-}
 
 .wrap {
     position: relative;

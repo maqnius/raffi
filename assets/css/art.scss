@@ -2,18 +2,15 @@
 ---
 
 body {
-    font-family: monospace;
-    line-height: 1.5em;
-    font-size: 1.2em;
     max-width: 90%;
     margin: 0 auto;
     width: 500px;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 1em;
+main, nav {
+    font-family: monospace;
 }
+
 
 // Index
 

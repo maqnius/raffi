@@ -26,6 +26,22 @@ collections:
           - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Sex Work'
+        name: 'sexwork'
+        file: 'sexwork.html'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Sex Work' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'sexwork' }
+          - { label: 'Name', name: 'myname', widget: 'text' }
+          - { label: 'Beschreibung', name: 'description', widget: 'markdown' }
+          - { label: 'Profilbild', name: 'avatar', widget: 'image' }
+          - { 
+            label: 'Marketing Bilder', 
+            name: 'marketing', 
+            widget: 'list',
+            field: {label: Image, name: image, widget: image}
+          }
+
   - name: "config"
     label: "Config"
     editor:
