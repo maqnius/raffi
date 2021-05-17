@@ -1,4 +1,9 @@
 <nav>
+    
+    <a class="nav-item" href="{{ site.baseurl }}{{ site.posts[0].url }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+        Home
+    </a>
+    <span class="nav-item-separator">&middot;</span>
     {% for item in site.data.navigation.items %}
     <a class="nav-item" href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
         {{ item.name }}

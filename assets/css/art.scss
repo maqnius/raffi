@@ -43,7 +43,16 @@ nav {
 .nav-back,
 .nav-forward {
     display: inline-block;
-    width: 70px;
+    width: 45%;
+}
+
+.nav-back {
+    text-align: right;
+    margin-right: 1em;
+}
+
+.nav-forward {
+    text-align: left;
 }
 
 .pagination {
